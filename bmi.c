@@ -1,17 +1,26 @@
-#include <stdio.h>
+#include <stdio.h>// Repositorio: https://github.com/Fede969/IMC_Calculadora
 
 int main() {
 	float peso, altura, imc;
 	
 	
-	printf("Ingrese el peso en kg: ");
-	scanf("%f", &peso);
-	printf("Ingrese la altura en metros: ");
-	scanf("%f", &altura);
+	do {
+		printf("Ingrese el peso en kg: ");
+		scanf("%f", &peso);
+		if (peso <= 0) {
+		printf("Error: el peso debe ser un valor positivo.\n");
+		}
+	} while (peso <= 0);
 	
+	do {
+		printf("Ingrese la altura en metros: ");
+		scanf("%f", &altura);
+		if (altura <= 0) {
+			printf("Error: la altura debe ser un valor positivo.\n");
+		}
+	} while (altura <= 0);
 	
 	imc = peso / (altura * altura);
-	
 	
 	printf("\nSu indice de masa corporal es: %.2f\n", imc);
 	printf("\n indice | Condicion\n");

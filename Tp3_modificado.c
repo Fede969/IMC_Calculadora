@@ -12,7 +12,7 @@ int main() {
 	
 	printf("\nSu indice de masa corporal es: %.2f\n", imc);
 	
-	// Mostrar tabla fija
+	
 	printf("\n indice | Condicion\n");
 	printf("----------------------------\n");
 	printf("<18.5   | Bajo peso\n");
@@ -20,16 +20,17 @@ int main() {
 	printf("25.0-29.9 | Sobrepeso\n");
 	printf(">=30    | Obesidad\n");
 	
-	// Mostrar condici髇 del usuario
+	
 	if (imc < 18.5) {
-		printf("\nEl usuario se encuentra en la condici髇: Bajo peso\n");
+		printf("\nEl usuario se encuentra en la condici贸n: Bajo peso\n");
 	} else if (imc <= 24.9) {
-		printf("\nEl usuario se encuentra en la condici髇: Normal\n");
+		printf("\nEl usuario se encuentra en la condici贸n: Normal\n");
 	} else if (imc <= 29.9) {
-		printf("\nEl usuario se encuentra en la condici髇: Sobrepeso\n");
+		printf("\nEl usuario se encuentra en la condici贸n: Sobrepeso\n");
 	} else {
-		printf("\nEl usuario se encuentra en la condici髇: Obesidad\n");
+		printf("\nEl usuario se encuentra en la condici贸n: Obesidad\n");
 	}
 	
 	return 0;
 }
+
